@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "lib": [
+      "ES6"
+    ],
+    "types": ["node"]
+  }
+}
