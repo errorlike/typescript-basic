@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "lib": [
-      "ES6"
-    ],
-    "types": ["node"]
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "declaration": true,
   }
 }
