@@ -1,16 +1,16 @@
 const calculateBmi = (height: number, mass: number): string => {
-    const heightToM = height / 100
-    const result = mass / Math.pow(heightToM, 2)
+    const heightToM = height / 100;
+    const result = mass / Math.pow(heightToM, 2);
     if (result < 18.5) {
-        return ('UnderWeight')
+        return ('UnderWeight');
     }
     else if (18.5 <= result && result <= 24.9) {
-        return `Normal (healthy weight)`
+        return `Normal (healthy weight)`;
     }
     else {
-        return `Overweight`
+        return `Overweight`;
     }
-}
+};
 // interface MultiplyValues {
 //     value1: number;
 //     value2: number;
