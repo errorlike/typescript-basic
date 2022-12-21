@@ -41,18 +41,20 @@ const calculateExercises = (trainHourOfDays: number[], target: number): Result =
     return result;
 
 };
-const v1 = process.argv.slice(2, -1);
-const v2 = process.argv.slice(-1);
-const numberV1: number[] = v1.map(argv => {
-    if (isNaN(Number(argv))) {
-        throw new Error("Provided values were not numbers!");
-    }
-    return +argv;
-}
-);
-if (isNaN(Number(v2[0]))) {
-    throw new Error("Provided values were not numbers!");
-}
+// const v1 = process.argv.slice(2, -1);
+// const v2 = process.argv.slice(-1);
+// const numberV1: number[] = v1.map(argv => {
+//     if (isNaN(Number(argv))) {
+//         throw new Error("Provided values were not numbers!");
+//     }
+//     return +argv;
+// }
+// );
+// if (isNaN(Number(v2[0]))) {
+//     throw new Error("Provided values were not numbers!");
+// }
 
-console.log(calculateExercises([3, 0, 2, 4.5, 0, 3, 1], 2));
-console.log(calculateExercises(numberV1, Number(v2[0])));
+// console.log(calculateExercises([3, 0, 2, 4.5, 0, 3, 1], 2));
+// console.log(calculateExercises(numberV1, Number(v2[0])));
+
+export default calculateExercises;
